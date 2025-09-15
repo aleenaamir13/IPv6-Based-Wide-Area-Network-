@@ -1,4 +1,4 @@
-# IPv6-Based-Wide-Area-Network-
+# IPv6-Based-Wide-Area-Network-on-Cisco-Packet-Tracer-and-MobaXterm
 This project implements IPv6 addressing with OSPF routing in a network of core/edge routers, switches, and end devices. It evaluates OSPF’s efficiency, scalability, and simplicity in IPv6, analyzing routing performance, address configuration, and topology design, with detailed explanations of concepts and hardware setup.
 # IPv6-Based Wide Area Network with OSPF Routing
 
