@@ -18,7 +18,7 @@ This project designs and implements an IPv6 WAN with **OSPFv3 routing**, using a
 
 ---
 
-## 🛠Tools & Resources  
+## Tools & Resources  
 ### Software  
 - Cisco Packet Tracer  
 
@@ -82,7 +82,7 @@ The project uses **Global Unicast Addressing (GUA)** for:
 
 ---
 
-## ⚙️ OSPFv3 Routing  
+## OSPFv3 Routing  
 ### Why OSPFv3?  
 - Dynamic route updates  
 - High scalability  
