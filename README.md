@@ -104,6 +104,10 @@ Despite hardware constraints, the **Cisco Packet Tracer simulation** fully valid
 
 ---
 
+## Hardware 
+<img width="774" height="445" alt="image" src="https://github.com/user-attachments/assets/0d67f056-4f21-41fa-b5a9-6f9e003050ec" />
+
+---
 ## Project Demo Video  
 [Watch Here](https://drive.google.com/file/d/1hwTY4MHgHkA62UJiEDgyXkR-t4lGx9Sk/view?usp=drivesdk)
 
