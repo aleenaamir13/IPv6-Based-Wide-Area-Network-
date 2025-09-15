@@ -1,0 +1,29 @@
+Dec  9 15:01:59.654: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to downit
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip address 2001:DB8:BBBB:1::/64
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Dec  9 15:01:59.654: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to downit
+Router(config)# interface GigabitEthernet0/1
+Router(config-if)# ip address 2001:DCC:CCCC:1::/64
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Router(config)# exit
+Dec  9 15:01:59.654: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+Dec  9 15:01:59.725: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+Dec  9 15:02:06.725: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+Dec  9 15:02:06.725: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+Dec  9 15:02:06.727: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+Dec  9 15:02:06.727: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+Dec  9 15:02:18.727: %OSPFV3-4-NORTRID: Process OSPFv3-1-IPv6 could not pick a router-id, please configure manually
+Router(config)# router ospf 1
+Router(config-router)# router-id 2.2.2.2
+Router(config-router)# interface gi0/0
+Router(config-router)# exit
+Router(config)# router ospf 1 area 0
+Router(config)# interface gi0/0
+Router(config-if)# ipv6 ospf 1 area 0
+Router(config-if)# exit
+Router(config)# exit
+%SYS-5-CONFIG_I: Configured from console by console
+Router#

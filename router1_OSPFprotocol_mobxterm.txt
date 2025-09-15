@@ -1,0 +1,17 @@
+Dec  9 10:04:42.710: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+Hexalinker#
+Dec  9 10:07:39.523: %SYS-5-CONFIG_I: Configured from console by console
+Enter configuration commands, one per line.  End with CNTL/Z.
+Hexalinker(config)# 
+% Invalid input detected at '^' marker.
+Hexalinker(config)# router ospf 1
+Dec  9 10:07:39.525: %OSPFV3-4-NORTRID: Process OSPFv3-1-IPv6 could not pick a router-id, please configure manually
+Hexalinker(config-router)# router-id 1.1.1.1
+Hexalinker(config-router)# interface gi0/0
+Hexalinker(config-router)# exit
+Hexalinker(config)# router ospf 1 area 0
+Hexalinker(config)# interface gi0/0
+Hexalinker(config-if)# ipv6 ospf 1 area 0
+Hexalinker(config-if)# exit
+Hexalinker(config)# exit
+Hexalinker#

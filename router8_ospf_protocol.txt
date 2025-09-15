@@ -1,0 +1,18 @@
+%SYS-5-CONFIG_I: Configured from console by console
+Router(config)# 
+%Y2K-5-CONFIG: Interface GigabitEthernet0/0
+Router(config-if)# ip address 2001:DB8:AAAA:1::/64
+%IPV6-5-ENABLED: IPv6 enabled on interface GigabitEthernet0/0
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Router(config)# router ospf 1
+%OSPF-4-NOROUTERID: OSPFv3 process 1 could not pick a router-id, please configure manually
+Router(config-router)# router-id 2.2.2.2
+Router(config-router)# interface gi0/0
+Router(config-router)# exit
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip ospf 1 area 0
+Router(config-if)# exit
+Router(config)# exit
+00:15:59: %OSPFv3-5-ADJCHG: Process 1, Nbr 1.1.1.1 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+Router#

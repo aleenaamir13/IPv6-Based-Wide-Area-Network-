@@ -1,0 +1,17 @@
+Enter configuration commands, one per line. End with CNTL/Z.
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip address 2001:DB8:AAAA:1::/64
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Router(config)# interface GigabitEthernet0/1
+Router(config-if)# ip address 2001:FFFF:FFFF:1::/64
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Router(config)# exit
+%SYS-5-CONFIG_I: Configured from console by console
+Router#
+%LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+%LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Router#
