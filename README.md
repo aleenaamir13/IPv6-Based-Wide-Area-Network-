@@ -2,20 +2,6 @@
 This project implements IPv6 addressing with OSPF routing in a network of core/edge routers, switches, and end devices. It evaluates OSPF’s efficiency, scalability, and simplicity in IPv6, analyzing routing performance, address configuration, and topology design, with detailed explanations of concepts and hardware setup.
 # IPv6-Based Wide Area Network with OSPF Routing
 
-## Abstract  
-This project explores the implementation of **IPv6 addressing** and **Open Shortest Path First (OSPFv3)** routing in a hierarchical network topology. The topology consists of **core and edge routers**, switches, and end devices. The goal is to evaluate the **efficiency, scalability, and simplicity** of OSPF in an IPv6 environment while analyzing **routing performance, address configuration, and topology structure**. Both **software simulation (Cisco Packet Tracer)** and **hardware implementation** were tested.
-
----
-
-## Introduction  
-Due to the **depletion of IPv4 addresses**, IPv6 has become essential for modern networking. IPv6 provides:  
-- Vast address space  
-- Improved scalability  
-- Enhanced security features  
-- Support for IoT and mobile ecosystems  
-
-This project designs and implements an IPv6 WAN with **OSPFv3 routing**, using a **three-layer hierarchical topology (Core, Distribution, Access)** to ensure **structured design, scalability, and efficient management**.
-
 ---
 
 ## Tools & Resources  
@@ -30,7 +16,8 @@ This project designs and implements an IPv6 WAN with **OSPFv3 routing**, using a
 ---
 
 ## Topology Design  
-The topology follows a **three-layer hierarchical model**:  
+The topology follows a **three-layer hierarchical model**: 
+<img width="558" height="354" alt="image" src="https://github.com/user-attachments/assets/9e45b7d6-d255-4cfd-83d1-b10a85d5dd7f" />
 
 1. **Core Layer**  
    - Routers (Router6 & Router8) interconnect network branches.  
